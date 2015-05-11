@@ -83,7 +83,7 @@ function epochToDate(epochSecs) {
                 </a>
             </div>
             <div class="tipcontent">
-              <a href="/news/{{ n._id }}">
+              <a href="/news/{{ n.value._id }}">
                 <h3>{{n.value.title}}</h3>
                 {{n.value.news_body |slice:":450"}}
                 <div class="sharesocial">
