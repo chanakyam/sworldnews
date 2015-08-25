@@ -54,7 +54,7 @@ function epochToDate(epochSecs) {
         
         <div class="fashiontipsrow">
           <div class="tipimg">            
-              <img src="http://img1.contentapi.ws/{{ newsParam.image_name }}" alt="" />            
+              <img src="http://newscdn.lycos.com/{{ newsParam.image_name }}" alt="" />            
           </div>
           <div class="tipcontent">
             {{ newsParam.content }}            
@@ -72,7 +72,7 @@ function epochToDate(epochSecs) {
           <div class="tipsrow clearfix">
             <div class="tipimg">
               <a href="/news/{{ n._id }}">
-                    <img src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="{{ n.title }}" title="{{ n.title }}"/>
+                    <img src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="{{ n.title }}" title="{{ n.title }}"/>
                 </a>
             </div>
             <div class="tipcontent">
@@ -96,7 +96,7 @@ function epochToDate(epochSecs) {
           <div class="LvRow clearfix">
             <div class="LvThumb">
               <a href="/playvideo/{{ n.id }}">
-                <img src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" />
+                <img src="http://newscdn.lycos.com/world_news/{{ n.thumb_image }}" alt="" />
                 <span class="videotext"></span>
               </a>
             </div>
@@ -115,7 +115,7 @@ function epochToDate(epochSecs) {
           
             <div class="LvRow clearfix">
             {% for n in gallery %}
-            <a href="/news"> <img src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" /></a>
+            <a href="/news"> <img src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="" /></a>
             {% endfor %}
             </div>        
           
@@ -135,7 +135,7 @@ function epochToDate(epochSecs) {
         {% for n in latestPopularVideos %}
           <div class="cal1"> 
             <a href="/playvideo/{{ n.id }}" class="pvclass">
-              <img src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" />
+              <img src="http://newscdn.lycos.com/world_news/{{ n.thumb_image }}" alt="" />
               <span class="videotext"></span>
             </a>
             <p>{{n.title}}</p>
